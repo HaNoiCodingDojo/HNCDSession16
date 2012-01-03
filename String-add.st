@@ -1,0 +1,1 @@
+'From Pharo1.3 of 16 June 2011 [Latest update: #13315] on 3 January 2012 at 9:34:55 am'!!String methodsFor: 'as yet unclassified' stamp: 'SergeStinckwich 12/31/2011 15:54'!add	| numbers |	numbers := self findTokens: ','.	^ numbers inject: 0 into: [ :subTotal :each | subTotal + each asInteger ]! !
